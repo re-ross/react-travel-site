@@ -1,14 +1,14 @@
 import React from "react";
-import Button from "../components/Button";
-import "./Footer.jsx";
+import "./Footer.css";
+import Button from "./Button";
 import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className="footer-container">
       <section className="footer-subscription">
-        <p className="footer subscription-heading">
-          Join the Adventure newsletter to subscribe our best vacation deals
+        <p className="footer-subscription-heading">
+          Join the Adventure newsletter to receive our best vacation deals
         </p>
         <p className="footer-subscription-text">
           You can unsubscribe at any time.
@@ -16,10 +16,10 @@ function Footer() {
         <div className="input-areas">
           <form>
             <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
               className="footer-input"
+              name="email"
+              type="email"
+              placeholder="Your Email"
             />
             <Button buttonStyle="btn--outline">Subscribe</Button>
           </form>
