@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-function CardItem(props) {
+export const CardItem = (props) => {
   return (
     <>
       <li className="cards__item">
@@ -16,6 +15,4 @@ function CardItem(props) {
       </li>
     </>
   );
-}
-
-export default CardItem;
+};

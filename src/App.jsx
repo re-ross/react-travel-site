@@ -1,12 +1,9 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+import { Navbar, Footer } from "./components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Products from "./pages/Products";
-import SignUp from "./pages/SignUp";
+import { Home, Services, Products, SignUp } from "./pages";
 
-function App() {
+const App = () => {
   return (
     <>
       <Router>
@@ -17,9 +14,10 @@ function App() {
           <Route path="/products" exact component={Products} />
           <Route path="/sign-up" exact component={SignUp} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );
-}
+};
 
 export default App;

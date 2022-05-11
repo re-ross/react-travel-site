@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Button from "./Button";
+import { Button } from "./index";
 import { Link } from "react-router-dom";
 import "./styles/Navbar.css";
 
-function Navbar() {
+export const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -75,6 +75,4 @@ function Navbar() {
       </nav>
     </>
   );
-}
-
-export default Navbar;
+};

@@ -1,14 +1,7 @@
-import React from "react";
-import ".././App.css";
-import Footer from "../components/Footer";
-
-function Products() {
+export const Products = () => {
   return (
     <>
       <h1 className="products">Products</h1>
-      <Footer />
     </>
   );
-}
-
-export default Products;
+};

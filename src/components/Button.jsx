@@ -1,11 +1,16 @@
-import React from "react";
 import "./styles/Button.css";
 import { Link } from "react-router-dom";
 
 const STYLES = ["btn--primary", "btn--outline"];
 const SIZES = ["btn--mediumm", "btn--outline"];
 
-const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
+export const Button = ({
+  children,
+  type,
+  onClick,
+  buttonStyle,
+  buttonSize,
+}) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
@@ -24,5 +29,3 @@ const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
     </Link>
   );
 };
-
-export default Button;

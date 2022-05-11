@@ -1,9 +1,8 @@
-import React from "react";
 import "./styles/Footer.css";
-import Button from "./Button";
+import { Button } from "./index";
 import { Link } from "react-router-dom";
 
-function Footer() {
+export const Footer = () => {
   return (
     <div className="footer-container">
       <section className="footer-subscription">
@@ -115,6 +114,4 @@ function Footer() {
       </section>
     </div>
   );
-}
-
-export default Footer;
+};

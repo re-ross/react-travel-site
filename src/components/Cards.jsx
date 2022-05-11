@@ -1,8 +1,7 @@
-import React from "react";
-import CardItem from "./CardItem";
+import { CardItem } from "./index";
 import "./styles/Cards.css";
 
-function Cards() {
+export const Cards = () => {
   return (
     <div className="cards">
       <h1>Check out these EPIC destinations!</h1>
@@ -46,6 +45,4 @@ function Cards() {
       </div>
     </div>
   );
-}
-
-export default Cards;
+};
